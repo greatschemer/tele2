@@ -1,0 +1,108 @@
+.tariff {
+    height: 138px;
+    display: flex;
+    border-bottom: 1px solid #D1DBD6;
+    align-items: center;
+}
+.tariff__title, 
+.tariff__traffic,
+.tariff__minutes,
+.tariff__sms,
+.tariff__buy {
+    width: calc(100% / 5);
+    padding: 23px;
+    height: 100%;
+    flex-grow: 1;
+    flex-shrink: 0;
+}
+.tariff:first-of-type {
+    border-top: 1px solid #D1DBD6;
+}
+    .tariff__title--hit {
+        position: relative;
+    }
+    .tariff__title--hit::after {
+        content: '';
+        width: 46px;
+        height: 55px;
+        top: 0;
+        right: 0;
+        display: block;
+        position: absolute;
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='46' height='55' fill-rule='evenodd'%3E%3Cpath d='M0 0h46v55L23 43 0 55z' fill='%23FFDA57'/%3E%3Cpath d='M8.017 34v-4.526H11.6V34h-.86v-3.78H8.883V34h-.866zm4.838 2.25v-6.776h.822v.637h.062a1.52 1.52 0 0 1 .536-.523c.23-.138.53-.207.896-.207a1.73 1.73 0 0 1 .76.167 1.77 1.77 0 0 1 .598.468c.168.2.297.445.4.734s.14.613.14.973a3.29 3.29 0 0 1-.141 1 2.23 2.23 0 0 1-.391.747 1.62 1.62 0 0 1-.602.461c-.234.104-.5.156-.765.156-.33 0-.615-.064-.853-.193a1.56 1.56 0 0 1-.571-.523h-.062l.044.716v2.162h-.866zM13.72 32c0 .223.03.417.094.582s.15.304.257.415a1.03 1.03 0 0 0 .382.25 1.29 1.29 0 0 0 .461.083 1.1 1.1 0 0 0 .468-.1 1.14 1.14 0 0 0 .398-.288 1.42 1.42 0 0 0 .27-.5c.066-.202.1-.445.1-.732 0-.275-.033-.514-.1-.716a1.41 1.41 0 0 0-.27-.497 1.04 1.04 0 0 0-.396-.283 1.27 1.27 0 0 0-.479-.09c-.35 0-.634.103-.855.308s-.332.514-.332.927V32zm4.003-.25a2.99 2.99 0 0 1 .156-1c.104-.294.25-.542.44-.743a1.94 1.94 0 0 1 .672-.464 2.17 2.17 0 0 1 .846-.163 2.18 2.18 0 0 1 .828.158 1.91 1.91 0 0 1 .677.464 2.15 2.15 0 0 1 .448.743c.108.293.16.623.16.995s-.053.704-.16.995a2.13 2.13 0 0 1-.444.738c-.19.2-.413.353-.672.457s-.538.156-.837.156a2.25 2.25 0 0 1-.846-.156c-.26-.104-.483-.255-.672-.453s-.335-.442-.44-.734-.156-.623-.156-.995zm.9 0c0 .28.03.52.094.72a1.61 1.61 0 0 0 .255.5.96.96 0 0 0 .382.283 1.25 1.25 0 0 0 .472.1 1.22 1.22 0 0 0 .464-.09.98.98 0 0 0 .387-.288 1.45 1.45 0 0 0 .259-.494c.063-.198.094-.437.094-.72a2.36 2.36 0 0 0-.099-.721c-.066-.205-.154-.372-.264-.5a1.06 1.06 0 0 0-.382-.288 1.14 1.14 0 0 0-.459-.094c-.167 0-.324.03-.472.094a1 1 0 0 0-.382.288 1.45 1.45 0 0 0-.255.5c-.063.204-.094.448-.094.73zm3.762 1.503h.44c.114-.144.215-.32.3-.525s.158-.458.215-.756.1-.65.132-1.06l.046-1.44h2.988v3.78h.765v1.934h-.73L26.46 34h-3.248l-.092 1.187h-.725v-1.934zm1.274 0h1.973V30.22h-1.406l-.026.877a8.26 8.26 0 0 1-.094.837 5.19 5.19 0 0 1-.176.738c-.072.225-.162.42-.27.58zm4.228-.44a1.41 1.41 0 0 1 .154-.675 1.15 1.15 0 0 1 .49-.468c.224-.12.513-.2.868-.27s.784-.1 1.288-.1v-.207c0-.325-.093-.57-.28-.736s-.46-.248-.82-.248a2.9 2.9 0 0 0-.727.09 2.33 2.33 0 0 0-.692.314v-.8a2.13 2.13 0 0 1 .738-.261 4.73 4.73 0 0 1 .8-.073c.636 0 1.102.152 1.4.455s.446.73.446 1.277V34h-.822v-.712h-.062a1.73 1.73 0 0 1-.53.59c-.2.142-.503.2-.88.2-.457 0-.8-.12-1.028-.358s-.343-.544-.343-.916zm.9-.1c0 .193.06.353.176.48s.32.2.606.2a1.11 1.11 0 0 0 .404-.077c.132-.05.25-.13.356-.235a1.01 1.01 0 0 0 .253-.396 1.76 1.76 0 0 0 .094-.562v-.242l-.88.044a2.13 2.13 0 0 0-.584.143c-.15.066-.26.153-.325.26s-.1.24-.1.396zM32.213 34l1.692-2.42-1.652-2.105h.88l1.494 1.88.325.08v-1.96h.866v1.96l.303-.08 1.494-1.88h.848l-1.622 2.07L38.55 34H37.5l-1.4-1.973-.294.083V34h-.866v-1.9l-.325-.092L33.233 34h-1.02zM10.688 21.064V23H6.496v-1.936H7.76l2.464-4.272-2.288-3.856H6.64V11h2.72l2.336 3.936 1.104-2h-.672V11h4.128v1.936h-1.248l-2.192 3.872 2.528 4.256h1.296V23h-2.736l-2.576-4.352-1.36 2.416h.72zM17.584 23v-1.936h1.392v-8.128h-1.392V11h5.152v1.936h-1.408v5.856h.112L25.248 11h3.776v1.936h-1.392v8.128h1.392V23h-5.136v-1.936h1.392v-5.888h-.096L21.36 23h-3.776zm19.888 0H32v-1.936h1.568v-7.936h-1.632v1.52h-1.968V11h9.536v3.648h-1.968v-1.52h-1.632v7.936h1.568V23z' fill='%231F2229'/%3E%3C/svg%3E");
+    }
+    .tariff__title-title {
+        display: block;
+        font-size: 22px;
+        font-weight: 400;
+        padding: 0 0 6px;
+    }
+    .tariff__title-price {
+        font-size: 52px;
+        line-height: 50px;
+        padding: 0 9px 0 0;
+    }
+    .tariff__title-period {
+        display: block;
+    }
+    .tariff__title-details {
+        display: flex;
+    }
+    .tariff__title-period-symbol {
+        display: block;
+        font-size: 22px;
+        font-weight: 700;
+        line-height: 24px;
+    }
+    .tariff__title-period-period {
+        display: block;
+        font-size: 16px;
+        line-height: 18px;
+    }
+    .tariff__title-details-free {
+        font-size: 16px;
+        color: #1f2229;
+    }
+.tariff__unlim-site {
+    color: #000;
+    background-color: #ccc;
+    display: inline-block;
+    border-radius: 3px;
+    padding: 0 2px;
+    margin-right: 4px;
+    font-size: 10px;
+}
+.tariff__traffic-size,
+.tariff__minutes-minutes,
+.tariff__sms-sms {
+    font-weight: 700;
+    font-size: 22px;
+    display: block;
+}
+.tariff__buy-link {
+    padding: 7px 18px;
+    border-radius: 20px;
+    display: inline-block;
+    vertical-align: middle;
+    border-radius: 30px;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 22px;
+    white-space: nowrap;
+    cursor: pointer;
+    margin: 0 0 20px;
+    min-width: 125px;
+    background: transparent;
+    border: 2px solid #1f2229;
+    color: #1f2229;
+    text-align: center;
+    outline: none;
+}
+.tariff__buy-config {
+    border-bottom: 1px solid #1f2229;
+    display: inline-block;
+    cursor: pointer;
+}
